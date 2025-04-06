@@ -117,7 +117,8 @@ async function loadTemplates() {
 
 function getReleaseComment() {
   const url = repositoryUrl + '/releases/tag/${nextRelease.gitTag}';
-  let comment = '🎉 This change has been released in version [${nextRelease.version}](' + url + ')';
+  // let
+  const comment = '🎉 This change has been released in version [${nextRelease.version}](' + url + ')';
   return comment;
 }
 
